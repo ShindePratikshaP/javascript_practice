@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Switch case</title>
+  </head>
+  <body>
+    <h1>WELCOME TO JAVASCRIPT....💛💛</h1>
+  <script>
+    const ch = parseInt(prompt(`1. Addition \n 2. Subtraction \n 3.Multiplication \n 4. Division \n Enter Your Choice :`));
+    const num1 = parseInt(prompt("Enter First Number"));
+    const num2 = parseInt(prompt("Enter Second Number"));
+    document.write(`First Number : `,num1);
+    document.write(`</br> Second Number : `,num2);
+    
+    switch (ch) 
+    {
+        case 1:
+            const add = num1+num2;
+            document.write(`<br> Addition of ${num1} and ${num2} is : `,add);
+            break;
+        case 2:
+            const sub = num1-num2;
+            document.write(`<br> Subtraction of ${num1} and ${num2} is : `,sub);
+            break;
+        case 3:
+            const mult = num1*num2;
+            document.write(`<br> Multiplication of ${num1} and ${num2} is : `,mult);
+            break;
+        case 4:
+            const div = num1/num2;
+            document.write(`<br> Division of ${num1} and ${num2} is : `,div);
+            break;
+    
+        default:
+            document.write("Entered Invalid Choice");
+            break;
+    }
+    </script>
+  </body>
+</html>
